@@ -1,14 +1,14 @@
 import React, { Component } from "react"
 import Link from "gatsby-link"
 import PropTypes from "prop-types"
-import Layout from "../components/layout"
+
+import Layout from "../../components/layout"
 
 class PostsTemplate extends Component {
     render() {
         const data = this.props.data
 
         return(
-
         	<Layout>
 	            <div>
 	                <h1>Posts</h1>
@@ -24,7 +24,6 @@ class PostsTemplate extends Component {
 	                        {node.date}
 	                    </div>
 	                ))}
-
 	            </div>
             </Layout>
         )
