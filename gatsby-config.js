@@ -45,16 +45,8 @@ module.exports = {
       includedRoutes: [
           "**/posts",
           "**/pages",
+          "**/menus"
       ],
-      includedRoutes: [
-          "**/categories",
-          "**/posts",
-          "**/pages",
-          "**/media",
-          "**/tags",
-          "**/taxonomies",
-          "**/users",
-        ],
         // Blacklisted routes using glob patterns
         excludedRoutes: ["**/categories",
           "**/media",

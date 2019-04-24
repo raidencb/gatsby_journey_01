@@ -2,7 +2,9 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
+import MainMenu from '../components/Menu/MainMenu'
+
+const Header = ({ siteTitle}) => (
   <header
     style={{
       background: `rebeccapurple`,
@@ -28,6 +30,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+   <MainMenu/>
   </header>
 )
 
@@ -40,3 +43,4 @@ Header.defaultProps = {
 }
 
 export default Header
+
