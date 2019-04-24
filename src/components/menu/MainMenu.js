@@ -31,8 +31,16 @@ const MainMenu = () => (
      //  )
     <div>
         <h1>Main Menu</h1>
-        {console.log(data.allWordpressWpApiMenusMenusItems.edges[0].node.items)
-         // const item_menu = data.allWordpressWpApiMenusMenusItems.edges[0].node.items
+        {//console.log(data.allWordpressWpApiMenusMenusItems.edges[0].node.items)
+            data.allWordpressWpApiMenusMenusItems.edges[0].node.items.map(item => (
+   
+                <li key={item.object_slug}>
+                            <Link to={item.url}>
+                                {item.title}
+                            </Link>
+                </li>
+
+            ))
         }
     </div>
         )}

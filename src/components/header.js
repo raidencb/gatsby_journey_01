@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import MainMenu from '../components/Menu/MainMenu'
+//import MainMenu from '../components/Menu/MainMenu'
 
 const Header = ({ siteTitle}) => (
   <header
@@ -30,7 +30,6 @@ const Header = ({ siteTitle}) => (
         </Link>
       </h1>
     </div>
-   <MainMenu/>
   </header>
 )
 
