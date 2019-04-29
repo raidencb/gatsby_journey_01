@@ -28,7 +28,6 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <MainMenu />
         <div
           style={{
             margin: `0 auto`,
@@ -37,7 +36,10 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-          <main>{children}</main>
+          <main>
+          <MainMenu />
+          {children}</main>
+
           <footer>
             © {new Date().getFullYear()}, Built with
             {` `}
