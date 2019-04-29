@@ -30,6 +30,8 @@ const postsQuery = `
         status
         template
         format
+        title
+        date
       }
     }
   }
