@@ -28,34 +28,15 @@ module.exports = {
       },
     },
     {
-    resolve:"gatsby-source-wordpress",
-    options:{
+      resolve:"gatsby-source-wordpress",
+      options:{
 
-        baseUrl:"localhost/playground",
-
-        protocol: "http",
-
-        hostingWPCOM:false,
-
-        useACF:false,
-
-        verboseOutput:true,
-        
-      },
-      includedRoutes: [
-          "**/posts",
-          "**/pages",
-          "**/menus"
-      ],
-        // Blacklisted routes using glob patterns
-        excludedRoutes: ["**/categories",
-          "**/media",
-          "**/tags",
-          "**/taxonomies",
-          "**/users",],
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+          baseUrl:"localhost/playground",
+          protocol: "http",
+          hostingWPCOM:false,
+          useACF:true,
+          verboseOutput:true,
+      }
+    }
   ],
 }
