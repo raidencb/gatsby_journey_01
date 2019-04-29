@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 //import MainMenu from '../components/Menu/MainMenu'
+//import MainMenu from 'menu/MainMenu'
 
 const Header = ({ siteTitle}) => (
   <header

@@ -69,14 +69,17 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                             console.log(result.errors);
                             reject(result.errors);
                         }
-                        const postTemplate = path.resolve("./src/templates/post.js");
-                        //const postsTemplate = path.resolve("./src/templates/posts.js");
 
-                        // Create Posts
-                        // createPage({
-                        //     path: `/posts/`,
-                        //     component: slash(postsTemplate)
-                        // });
+                        const postTemplate = path.resolve("./src/templates/post.js");
+
+
+                        createPaginatedPages({
+                            edges         : result.data.posts.edges,
+                            createPage    : createPage,
+                            pageTemplate  : "",
+                            pageLenght    : 5,
+                            pathPrefix    : "posts"
+                        })
 
                         _.each(result.data.allWordpressPost.edges, edge => {
                             createPage({
