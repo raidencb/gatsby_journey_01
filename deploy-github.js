@@ -4,6 +4,7 @@ const ghpages = require('gh-pages')
 ghpages.publish(
   'public',
   {
+  	// remote:'hub_page',
     branch: 'master',
     repo: 'https://github.com/raidencb/gatsby-deploy.git',
   },
