@@ -2,9 +2,9 @@ const ghpages = require('gh-pages')
 
 // replace with your repo url
 ghpages.publish(
-  'public',
+  'src',
   {
-  	// remote:'hub_page',
+  	remote:'hub_page',
     branch: 'master',
     repo: 'https://github.com/raidencb/gatsby-deploy.git',
   },
