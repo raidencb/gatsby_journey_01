@@ -2,11 +2,10 @@ const ghpages = require('gh-pages')
 
 // replace with your repo url
 ghpages.publish(
-  'src',
+  'public',
   {
-  	remote:'hub_page',
     branch: 'master',
-    repo: 'https://github.com/raidencb/gatsby-deploy.git',
+    repo: 'https://github.com/flexdinesh/flexdinesh.github.io.git',
   },
   () => {
     console.log('Deploy Complete!')
