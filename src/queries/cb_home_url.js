@@ -1,0 +1,1 @@
+export var gh_repo_name = "gatsby_journey_01";
