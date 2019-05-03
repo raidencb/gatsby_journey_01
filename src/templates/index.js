@@ -36,10 +36,10 @@ const IndexPage = ({ data, pathContext }) => {
                   </div>
               ))}
               <div className="previousLink">
-                  <NavLink test={first} url={gh_repo_name+"/posts/" + previousUrl} text="Go to Previous Page" />
+                  <NavLink test={first} url={gh_repo_name+"/" + previousUrl} text="Go to Previous Page" />
               </div>
               <div className="nextLink">
-                  <NavLink test={last} url={gh_repo_name+"/posts/" + nextUrl} text="Go to Next Page" />
+                  <NavLink test={last} url={gh_repo_name+"/" + nextUrl} text="Go to Next Page" />
               </div>
           </div>
         </Layout>
