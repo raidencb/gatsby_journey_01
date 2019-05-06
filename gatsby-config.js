@@ -37,6 +37,8 @@ module.exports = {
           hostingWPCOM:false,
           useACF:true,
           verboseOutput:true,
+
+          excludedRoutes: ["/*/*/users","/*/*/comments"],
       }
     }
   ],
