@@ -6,8 +6,6 @@ import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import './index.css'
 
-import MainMenu from '../components/Menu/MainMenu'
-
 const TemplateWrapper = ({ children,  data }) => (
   <div>
     <Helmet
@@ -26,7 +24,6 @@ const TemplateWrapper = ({ children,  data }) => (
         paddingTop: 0,
       }}
     >
-        <MainMenu menu={data} />
       {children()}
     </div>
   </div>
