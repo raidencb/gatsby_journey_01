@@ -34,21 +34,3 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
-
-export const query = graphql`
-  query LayoutQuery {
-        allWordpressWpApiMenusMenusItems{
-            edges{
-                node{
-                    id
-                    name
-                    items{
-                        title
-                        url
-                        object_slug
-                    }
-                }
-            }
-        }
-  }
-`
