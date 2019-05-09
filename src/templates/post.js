@@ -8,27 +8,12 @@ class PostTemplate extends Component {
     render() {
         const post = this.props.data.wordpressPost
 
-        let facebook  = ''
-        let twitter   = ''
-
-        if(post.acf !== null){
-            if(post.acf.facebook !== ''){
-                facebook = `<h3>Facebook</h3> ${post.acf.facebook}`
-            }
-
-            if(post.acf.twitter !== ''){
-                twitter = `<h3>Twitter</h3> ${post.acf.twitter}`
-            }
-        }
-
         return (
             <Layout>
                 <div>
                     <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
                     <div dangerouslySetInnerHTML={{ __html: post.content }} />
                 </div>
-                <div dangerouslySetInnerHTML={{__html:facebook}}></div>
-                <div dangerouslySetInnerHTML={{__html:twitter}}></div>
             </Layout>
         )
     }
@@ -42,10 +27,6 @@ export const pageQuery = graphql`
         wordpressPost(id: { eq: $id }) {
             title
             content
-            acf {
-                facebook
-                twitter
-            }
         }
         site {
             siteMetadata {

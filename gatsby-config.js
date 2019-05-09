@@ -32,13 +32,19 @@ module.exports = {
       resolve:"gatsby-source-wordpress",
       options:{
 
-          baseUrl:"localhost/playground",
+          baseUrl:"callboxinc.co.uk",
           protocol: "http",
           hostingWPCOM:false,
           useACF:true,
           verboseOutput:true,
 
-          excludedRoutes: ["/*/*/users","/*/*/comments"],
+          excludedRoutes: [
+            "/*/*/users",
+            "/*/*/comments",
+            "/*/*/categories",
+            "/*/*/media",
+            "/*/*/taxonomies",
+          ],
       }
     }
   ],
